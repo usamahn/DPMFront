@@ -10,7 +10,7 @@ import { _bookingsOverview } from '../../../../_mock';
 export default function BookingBookedRoom() {
   return (
     <Card>
-      <CardHeader title="Booked Room" />
+      <CardHeader title="Orders Status" />
       <Stack spacing={3} sx={{ px: 3, my: 5 }}>
         {_bookingsOverview.map((progress) => (
           <LinearProgress

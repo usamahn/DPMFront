@@ -12,8 +12,8 @@ import { BaseOptionChart } from '../../../../components/chart';
 // ----------------------------------------------------------------------
 
 const CHART_DATA = [75];
-const SOLD_OUT = 120;
-const AVAILABLE = 66;
+const SOLD_OUT = 30;
+const AVAILABLE = 70;
 
 export default function BookingRoomAvailable() {
   const theme = useTheme();
@@ -41,8 +41,8 @@ export default function BookingRoomAvailable() {
           name: { offsetY: -16 },
           value: { offsetY: 8 },
           total: {
-            label: 'Rooms',
-            formatter: () => fNumber(186),
+            label: 'drugs in the market',
+            formatter: () => fNumber(19600000),
           },
         },
       },
@@ -51,12 +51,12 @@ export default function BookingRoomAvailable() {
 
   return (
     <Card>
-      <CardHeader title="Room Available" sx={{ mb: 8 }} />
+      <CardHeader title="Available drugs in the market" sx={{ mb: 8 }} />
       <ReactApexChart type="radialBar" series={CHART_DATA} options={chartOptions} height={310} />
 
       <Stack spacing={2} sx={{ p: 5 }}>
-        <Legend label="Sold out" number={SOLD_OUT} />
-        <Legend label="Available" number={AVAILABLE} />
+        <Legend label="Stocked drugs" number={SOLD_OUT} />
+        <Legend label="Drugs in the market" number={AVAILABLE} />
       </Stack>
     </Card>
   );
@@ -88,7 +88,7 @@ function Legend({ label, number }) {
           {label}
         </Typography>
       </Stack>
-      <Typography variant="subtitle1">{number} Rooms</Typography>
+      <Typography variant="subtitle1">{number}</Typography>
     </Stack>
   );
 }

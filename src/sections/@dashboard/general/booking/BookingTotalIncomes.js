@@ -4,7 +4,7 @@ import ReactApexChart from 'react-apexcharts';
 import { styled } from '@mui/material/styles';
 import { Card, Typography, Stack } from '@mui/material';
 // utils
-import { fCurrency, fPercent } from '../../../../utils/formatNumber';
+import { fCurrency, fPercent,fNumber } from '../../../../utils/formatNumber';
 // components
 import Iconify from '../../../../components/Iconify';
 import BaseOptionChart from '../../../../components/chart/BaseOptionChart';
@@ -20,9 +20,9 @@ const RootStyle = styled(Card)(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-const TOTAL = 18765;
+const TOTAL = 78;
 const PERCENT = 2.6;
-const CHART_DATA = [{ data: [111, 136, 76, 108, 74, 54, 57, 84] }];
+const CHART_DATA = [{ data: [90, 101, 80, 76, 74, 54, 57, 65] }];
 
 export default function BookingTotalIncomes() {
   const chartOptions = merge(BaseOptionChart(), {
@@ -35,7 +35,7 @@ export default function BookingTotalIncomes() {
     tooltip: {
       marker: { show: false },
       y: {
-        formatter: (seriesName) => fCurrency(seriesName),
+        formatter: (seriesName) => fNumber(seriesName),
         title: {
           formatter: () => '',
         },
@@ -48,8 +48,8 @@ export default function BookingTotalIncomes() {
     <RootStyle>
       <Stack direction="row" justifyContent="space-between" sx={{ mb: 3 }}>
         <div>
-          <Typography sx={{ mb: 2, typography: 'subtitle2' }}>Total Incomes</Typography>
-          <Typography sx={{ typography: 'h3' }}>{fCurrency(TOTAL)}</Typography>
+          <Typography sx={{ mb: 2, typography: 'subtitle2' }}>Drugs reserves</Typography>
+          <Typography sx={{ typography: 'h3' }}>{fNumber(TOTAL)} days</Typography>
         </div>
 
         <div>
