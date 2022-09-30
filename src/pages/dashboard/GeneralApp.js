@@ -79,44 +79,42 @@ export default function GeneralApp() {
 
 
 
-          <Grid item xs={12} md={12}>
-            <AppFeatured />
-          </Grid>
+          
           <Grid item xs={12} md={4}>
             <EcommerceWidgetSummary
-              title="Product Sold"
-              percent={2.6}
-              total={765}
+              title="Available drugs"
+              percent={18}
+              total={20000000}
               chartColor={theme.palette.primary.main}
-              chartData={[22, 8, 35, 50, 82, 84, 77, 12, 87, 43]}
+              chartData={[22, 20, 23, 28, 25, 27, 20, 17, 16, 20]}
             />
           </Grid>
           <Grid item xs={12} md={4}>
             <EcommerceWidgetSummary
-              title="Product Sold"
-              percent={2.6}
-              total={765}
+              title="Drugs Sold"
+              percent={-20}
+              total={18000000}
               chartColor={theme.palette.primary.main}
-              chartData={[22, 8, 35, 50, 82, 84, 77, 12, 87, 43]}
+              chartData={[12, 19, 20, 23, 19, 24, 23, 24, 28, 18]}
             />
           </Grid>
           <Grid item xs={12} md={4}>
             <EcommerceWidgetSummary
-              title="Product Sold"
-              percent={2.6}
-              total={765}
+              title="Imported drugs"
+              percent={12}
+              total={8500000}
               chartColor={theme.palette.primary.main}
-              chartData={[22, 8, 35, 50, 82, 84, 77, 12, 87, 43]}
+              chartData={[12, 9, 8, 8, 7, 10, 11, 12, 8, 8.5]}
             />
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <AnalyticsWidgetSummary title="Weekly Sales" total={714000} icon={'ant-design:android-filled'} />
+          <Grid item xs={12} sm={6} md={4}>
+            <AnalyticsWidgetSummary title="avaiblable drug types" total={71400} icon={'ant-design:check'} />
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <AnalyticsWidgetSummary title="Weekly Sales" color="warning" total={714000} icon={'ant-design:android-filled'} />
+          <Grid item xs={12} sm={6} md={4}>
+            <AnalyticsWidgetSummary title="Under stock drug types" color="warning" total={33400} icon={'ant-design:android-filled'} />
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
-            <AnalyticsWidgetSummary title="Weekly Sales" color="error" total={714000} icon={'ant-design:android-filled'} />
+          <Grid item xs={12} sm={6} md={4}>
+            <AnalyticsWidgetSummary title="Stockout drug types" color="error" total={5300} icon={'ant-design:android-filled'} />
           </Grid>
           <Grid item xs={12} md={6} lg={12}>
             <AnalyticsConversionRates />
@@ -184,24 +182,13 @@ export default function GeneralApp() {
             <AppNewInvoice />
           </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
-            <AppTopRelated />
-          </Grid>
+          
 
-          <Grid item xs={12} md={6} lg={4}>
-            <AppTopInstalledCountries />
-          </Grid>
+          
 
-          <Grid item xs={12} md={6} lg={4}>
-            <AppTopAuthors />
-          </Grid>
+         
 
-          <Grid item xs={12} md={6} lg={4}>
-            <Stack spacing={3}>
-              <AppWidget title="Conversion" total={38566} icon={'eva:person-fill'} chartData={48} />
-              <AppWidget title="Applications" total={55566} icon={'eva:email-fill'} color="warning" chartData={75} />
-            </Stack>
-          </Grid>
+          
         </Grid>
       </Container>
     </Page>

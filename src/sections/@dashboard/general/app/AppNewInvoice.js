@@ -18,9 +18,8 @@ import {
   TableContainer,
 } from '@mui/material';
 // utils
-import { fCurrency } from '../../../../utils/formatNumber';
+import { fCurrency, fNumber } from '../../../../utils/formatNumber';
 // _mock_
-import { _appInvoices } from '../../../../_mock';
 // components
 import Label from '../../../../components/Label';
 import Iconify from '../../../../components/Iconify';
@@ -29,20 +28,46 @@ import MenuPopover from '../../../../components/MenuPopover';
 
 // ----------------------------------------------------------------------
 
+const _appInvoices=[
+{
+  id: `1`,
+  price: 120,
+  category: "IRINOTECAN KABI  40 mg",
+  status: 'Done',
+},
+{
+  id: `1`,
+  price: 100,
+  category: "LANSOPRAL",
+  status: 'Pending',
+},
+{
+  id: `1`,
+  price: 700,
+  category: "PERILAX",
+  status: 'Rejected',
+},
+{
+  id: `1`,
+  price: 200,
+  category: "TAREG",
+  status: 'Done',
+},
+]
 export default function AppNewInvoice() {
   const theme = useTheme();
 
   return (
     <Card>
-      <CardHeader title="New Invoice" sx={{ mb: 3 }} />
+      <CardHeader title="Orders" sx={{ mb: 3 }} />
       <Scrollbar>
         <TableContainer sx={{ minWidth: 720 }}>
           <Table>
             <TableHead>
               <TableRow>
                 <TableCell>Invoice ID</TableCell>
-                <TableCell>Category</TableCell>
-                <TableCell>Price</TableCell>
+                <TableCell>Drug name</TableCell>
+                <TableCell>Quantity</TableCell>
                 <TableCell>Status</TableCell>
                 <TableCell />
               </TableRow>
@@ -52,13 +77,13 @@ export default function AppNewInvoice() {
                 <TableRow key={row.id}>
                   <TableCell>{`INV-${row.id}`}</TableCell>
                   <TableCell>{row.category}</TableCell>
-                  <TableCell>{fCurrency(row.price)}</TableCell>
+                  <TableCell>{fNumber(row.price)}</TableCell>
                   <TableCell>
                     <Label
                       variant={theme.palette.mode === 'light' ? 'ghost' : 'filled'}
                       color={
-                        (row.status === 'in_progress' && 'warning') ||
-                        (row.status === 'out_of_date' && 'error') ||
+                        (row.status === 'Pending' && 'warning') ||
+                        (row.status === 'Rejected' && 'error') ||
                         'success'
                       }
                     >
