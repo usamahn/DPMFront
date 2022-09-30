@@ -55,21 +55,16 @@ export default function HomeDarkMode() {
         <Grid container spacing={5} direction="row-reverse" justifyContent="space-between">
           <Grid item xs={12} md={4}>
             <ContentStyle>
-              <m.div variants={varFade().inUp}>
-                <Typography component="div" variant="overline" sx={{ mb: 2, color: 'text.disabled' }}>
-                  Easy switch between styles.
-                </Typography>
-              </m.div>
-
+             
               <m.div variants={varFade().inUp}>
                 <Typography variant="h2" sx={{ mb: 3, color: 'common.white' }}>
-                  Dark mode
+                Our Solution
                 </Typography>
               </m.div>
 
               <m.div variants={varFade().inUp}>
                 <Typography sx={{ color: 'common.white', mb: 5 }}>
-                  A dark theme that feels easier on the eyes.
+                A Decentralized portal platform to trace and supervise the stock status in real-time.
                 </Typography>
               </m.div>
             </ContentStyle>

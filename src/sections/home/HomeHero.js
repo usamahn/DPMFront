@@ -72,7 +72,7 @@ export default function HomeHero() {
       <RootStyle>
         <HeroOverlayStyle
           alt="overlay"
-          src="https://minimal-assets-api.vercel.app/assets/overlay.svg"
+          src="https://minimals.cc/assets/overlay.svg"
           variants={varFade().in}
         />
 
@@ -84,17 +84,22 @@ export default function HomeHero() {
 
         <Container>
           <ContentStyle>
+          <br/>
+              <br/>
+              <br/>
+              <br/>
             <m.div variants={varFade().inRight}>
               <Typography variant="h1" sx={{ color: 'common.white' }}>
                 Start a <br />
                 new project <br /> with
                 <Typography component="span" variant="h1" sx={{ color: 'primary.main' }}>
-                  &nbsp;Minimal
+                  &nbsp;PharmaChain
                 </Typography>
               </Typography>
             </m.div>
 
             <m.div variants={varFade().inRight}>
+              
               <Typography sx={{ color: 'common.white' }}>
                 The starting point for your next project based on easy-to-customize MUI helps you build apps faster and
                 better.

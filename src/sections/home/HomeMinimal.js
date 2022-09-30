@@ -11,19 +11,19 @@ import { MotionViewport, varFade } from '../../components/animate';
 const CARDS = [
   {
     icon: 'https://minimal-assets-api.vercel.app/assets/icons/ic_design.svg',
-    title: 'UI & UX Design',
+    title: 'Track & Trace ',
     description:
-      'The set is built on the principles of the atomic design system. It helps you to create projects fastest and easily customized packages for your projects.',
+      "Through blockchain, track each medicine's input/output to the chain. we offer traceability of medicines.",
   },
   {
     icon: 'https://minimal-assets-api.vercel.app/assets/icons/ic_code.svg',
-    title: 'Development',
-    description: 'Easy to customize and extend each component, saving you time and money.',
+    title: 'Analytical tools',
+    description: 'Our platform offers dashboards. eg. DPM a Dashboard to supervise stakeholder behaviors.',
   },
   {
     icon: '/logo/logo_single.svg',
-    title: 'Branding',
-    description: 'Consistent design in colors, fonts ... makes brand recognition easy.',
+    title: 'AI-Optimization ',
+    description: 'Predict demand more accurately in order to prevent drug shortage and optimize ordering.',
   },
 ];
 

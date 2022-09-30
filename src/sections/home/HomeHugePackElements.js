@@ -93,8 +93,8 @@ export default function HomeHugePackElements() {
 
               <m.div variants={varFade().inUp}>
                 <Typography variant="h2" sx={{ mb: 3 }}>
-                  Huge pack <br />
-                  of elements
+                  Our  <br />
+                  Vision
                 </Typography>
               </m.div>
 
@@ -105,7 +105,7 @@ export default function HomeHugePackElements() {
                     color: isLight ? 'text.secondary' : 'common.white',
                   }}
                 >
-                  We collected most popular elements. Menu, sliders, buttons, inputs etc. are all here. Just dive in!
+                  Digitalize the communication flow and decentralize information of the drug supply chain parties. 
                 </Typography>
               </m.div>
 
@@ -118,7 +118,7 @@ export default function HomeHugePackElements() {
                   rel="noopener"
                   href="https://www.minimals.cc/components/"
                 >
-                  View All Components
+                  Discover Our solution
                 </Button>
               </m.div>
             </ContentStyle>

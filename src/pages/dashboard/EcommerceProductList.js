@@ -42,9 +42,9 @@ import { ProductTableRow, ProductTableToolbar } from '../../sections/@dashboard/
 // ----------------------------------------------------------------------
 
 const TABLE_HEAD = [
-  { id: 'name', label: 'Product', align: 'left' },
-  { id: 'createdAt', label: 'Create at', align: 'left' },
-  { id: 'inventoryType', label: 'Status', align: 'center', width: 180 },
+  { id: 'name', label: 'Drug name', align: 'left' },
+  { id: 'createdAt', label: 'class', align: 'left' },
+  { id: 'inventoryType', label: 'Status at the market', align: 'center', width: 180 },
   { id: 'price', label: 'Price', align: 'right' },
   { id: '' },
 ];
@@ -94,7 +94,15 @@ export default function EcommerceProductList() {
       setTableData(products);
     }
   }, [products]);
+  const drugs =[
+    {
+      name:"Augmentin",
+      createdAt:"aaa",
+      inventoryType:"xxxx",
+      price:30
 
+    }
+  ]
   const handleFilterName = (filterName) => {
     setFilterName(filterName);
     setPage(0);
@@ -146,7 +154,7 @@ export default function EcommerceProductList() {
               component={RouterLink}
               to={PATH_DASHBOARD.eCommerce.new}
             >
-              New Product
+              New Drugs
             </Button>
           }
         />
